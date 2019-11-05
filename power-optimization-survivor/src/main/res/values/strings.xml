@@ -1,0 +1,27 @@
+<resources>
+  <string name="app_name">Power optimization survivor</string>
+  <string name="android_huawei_lock_screen_cleanup">Vyčištění po uzamčení</string>
+  <string name="android_huawei_lock_screen_cleanup_hint">Vypněte pro aplikaci 2N Mobile Key zavírání po uzamčení obrazovky.</string>
+  <string name="android_huawei_app_launch">Spouštění aplikací</string>
+  <string name="android_huawei_app_launch_hint">Vypněte automatickou správu spouštění aplikace 2N Mobile Key a poté zapněte všechny možnosti spouštění této aplikace.</string>
+  <string name="android_oppo_powermanaget">Nastavení baterie</string>
+  <string name="android_oppo_powermanaget_hint">Vypněte úsporu energie, vypněte i chytrou úsporu energie. V sekci vlastní ochrana spotřeby energie povolte aplikaci 2N Mobile Key běh na pozadí.</string>
+  <string name="android_oppo_startupmanager">Správce spuštění</string>
+  <string name="android_oppo_startupmanager_hint">V sekci správce spuštění povolte aplikaci 2N Mobile Key spouštění na pozadí.</string>
+  <string name="android_asus_autostart">Správce automatického spuštění</string>
+  <string name="android_asus_autostart_hint">Povolte aplikaci 2N Mobile Key automatické spuštění pro správné fungování na pozadí.</string>
+  <string name="android_asus_mobile_manager">Asus Mobile Manager</string>
+  <string name="android_asus_mobile_manager_hint">V aplikaci ASUS Mobile Manager můžete nastavovat spotřebu baterie. Pro správné fungování aplikace použijte normální nastavení spotřeby baterie.</string>
+  <string name="android_xiaomi_autostart">Automatické spuštění</string>
+  <string name="android_xiaomi_autostart_hint">Povolte aplikaci 2N Mobile Key automatické spouštění pro správné fungování na pozadí.</string>
+  <string name="android_xiaomi_battery_saver">Aplikace a úspora energie</string>
+  <string name="android_xiaomi_battery_saver_hint">V sekci aplikace a úspora energie vyberte aplikaci 2N Mobile Key, vyberte možnost Šetřete energii a zvolte nastavení Žádná omezení</string>
+  <string name="android_samsung_battery">Baterie</string>
+  <string name="android_samsung_battery_hint">Ujistěte se, že je vypnutý úsporný režim a přidejte aplikaci 2N Mobile Key mezi nemonitorované aplikace.</string>
+  <!--    <string name="android_letv_autostart">TODO</string>-->
+  <!--    <string name="android_letv_autostart_hint">TODO</string>-->
+  <!--    <string name="android_vivo_phoneoptimize">TODO</string>-->
+  <!--    <string name="android_vivo_phoneoptimize_hint">TODO</string>-->
+  <!--    <string name="android_meizu_security_page">TODO</string>-->
+  <!--    <string name="android_meizu_security_page_hint">TODO</string>-->
+</resources>

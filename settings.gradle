@@ -1,0 +1,2 @@
+include ':app', ':power-optimization-survivor'
+rootProject.name='power-optimization-survivor-android'
