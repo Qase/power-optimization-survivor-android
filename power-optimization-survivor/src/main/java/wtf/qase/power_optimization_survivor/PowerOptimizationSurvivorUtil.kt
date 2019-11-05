@@ -6,7 +6,6 @@ import android.net.Uri
 import android.os.Build
 import android.os.PowerManager
 import android.provider.Settings
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import wtf.qase.power_optimization_survivor.dto.PowerManagerIntent
 import wtf.qase.power_optimization_survivor.dto.PowerManagerOption
