@@ -29,7 +29,7 @@ dependencies {
 ```
 ### Maven
 **Step 1.**  Add the JitPack repository to your build file
-```markup
+```
 	<repositories>
 		<repository>
 		    <id>jitpack.io</id>
