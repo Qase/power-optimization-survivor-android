@@ -10,7 +10,10 @@
 # Power optimization survivor
 Android keeps pushing power optimization in order to protect user from battery draining apps. Unfortunatelly, some apps need to be running on the backround in order to fulfil their core functionality. In adition to the core power optimization, vendors are coming up with their own power optimization solutions, which are harder to find. This library was created to help app developers guide users to perform correct settings in order for the app to survive batery optimization features.
 
-# Installation
+## Documentation for end users
+[user-manual.md](doc/user-manual.md)
+
+## Installation
 ### Gradle
 **Step 1.**  Add the JitPack repository to your build file
 ```css
