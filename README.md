@@ -13,6 +13,9 @@ Android keeps pushing power optimization in order to protect user from battery d
 ## Documentation for end users
 [user-manual.md](doc/user-manual.md)
 
+## Documentation for developers
+[developer-manual.md](doc/developer-manual.md)
+
 ## Installation
 ### Gradle
 **Step 1.**  Add the JitPack repository to your build file
