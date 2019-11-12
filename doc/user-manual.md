@@ -1,6 +1,12 @@
 # Vendor specific power optimization settings
 
-### Asus
+- [Asus](#asus)
+- [Huawei/Honor](#huawei)
+- [Oppo](#oppo)
+- [Samsung](#samsung)
+- [Xiaomi](#xiaomi)
+
+### <a name="asus"></a>Asus
 #### Auto-start
 Allow auto-start for the app to make it run in the background correctly.
 <p align="left">
@@ -33,7 +39,7 @@ You can set power saver in the Mobile Manager app. To make the app work properly
 <img src="img/asus/android_asus_mobile_manager-3.jpg" width="350">
 </p>
 
-### Huawei/Honor
+### <a name="huawei"></a>Huawei/Honor
 #### App launch
 Disable Manage all automatically for the app and then enable all application launch options.
 <p align="left">
@@ -66,7 +72,7 @@ Disable Close after screen is locked for the app.
 <img src="img/honor/android_huawei_lock_screen_cleanup-3.png" width="350">
 </p>
 
-### Oppo
+### <a name="oppo"></a>Oppo
 #### Power Saver
 Deny power saving including Smart power saver. Allow background running for the app in the Custom power saver section.
 <p align="left">
@@ -107,7 +113,7 @@ Allow background running for the app in the Startup manager section.
 <img src="img/oppo/android_oppo_startupmanager-4.png" width="350">
 </p>
 
-### Samsung
+### <a name="samsung"></a>Samsung
 #### Samsung battery
 Make sure that the power saving mode is disabled and add the app to the unmonitored applications.
 <p align="left">
@@ -130,7 +136,7 @@ Make sure that the power saving mode is disabled and add the app to the unmonito
 <img src="img/samsung/android_samsung_battery-5.jpg" width="350">
 </p>
 
-### Xiaomi
+### <a name="xiaomi"></a>Xiaomi
 #### Autostart
 Allow autostart for the app to make it run in the background correctly.
 <p align="left">
