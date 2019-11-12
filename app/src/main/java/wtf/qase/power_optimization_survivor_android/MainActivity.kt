@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
                 androidx.recyclerview.widget.LinearLayoutManager.VERTICAL,
                 false
             )
-        val map = PowerOptimizationSurvivorUtil.providePowerManagerSettingsMap(this)
+        val map = PowerOptimizationSurvivorUtil.providePowerManagerSettingsMap()
 
         val manufacturers = map.map { it.key }.toMutableList()
         val dataAdapter = ArrayAdapter(
@@ -74,8 +74,12 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, getString(R.string.already_not_optimized), Toast.LENGTH_LONG)
                     .show()
             } else {
-                PowerOptimizationSurvivorUtil.goToNotOptimised(this)
+                PowerOptimizationSurvivorUtil.ignoreBatteryOptimizations(this)
             }
+        }
+
+        doNotOptimizeSettings.setOnClickListener {
+            PowerOptimizationSurvivorUtil.goToIgnoreBatteryOptimizationSettings(this)
         }
     }
 

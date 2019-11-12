@@ -1,13 +1,22 @@
-package wtf.qase.power_optimization_survivor
+## Developer manual for the library
 
-import android.content.Context
-import android.content.Intent
-import android.net.Uri
-import android.os.Build
-import android.os.PowerManager
-import android.provider.Settings
-import androidx.annotation.RequiresApi
-import wtf.qase.power_optimization_survivor.dto.PowerManagerOption
+All you need to know is explained in object PowerOptimizationSurvivorUtil. You can also check the demo app.
+
+### Common battery optimisation
+To disable common battery optimisation, that is present on all android phones since api 23, use one of two methods:
+- PowerOptimizationSurvivorUtil::ignoreBatteryOptimizations
+- PowerOptimizationSurvivorUtil::goToIgnoreBatteryOptimizationSettings
+
+### Vendor specific battery optimisation
+A lot of vendors add custom battery optimisation mechanisms. This library is trying to keep up with the list and provide mechanism to guide user to disable these settings.
+Map of all the mechanism is available by PowerOptimizationSurvivorUtil::providePowerManagerSettingsMap.
+You should present user with all options available for his manufacturer and explain, what he should set there. (Check: [user-manual.md](user-manual.md)).
+
+To check whether the option is available on the device, call PowerManagerOption::isCallable
+To open the setting, call PowerManagerOption::startIntent
+
+
+```kotlin
 
 object PowerOptimizationSurvivorUtil {
 
@@ -59,3 +68,34 @@ object PowerOptimizationSurvivorUtil {
         return MapProviderUtil.providePowerManagerSettingsMap()
     }
 }
+
+class PowerManagerOption(
+    val powerManagerSetting: PowerManagerSetting,
+    private val intents: List<PowerManagerIntent>
+) {
+    /**
+     * This method checks if the option is available on current device.
+     * @return Boolean Returns true if the option is available on the device.
+     */
+    fun isCallable(context: Context): Boolean {
+        return intents.any { it.isCallable(context) }
+    }
+
+    /**
+     * This method opens vendor specific setting. You should first explain to the user, what to do once it is opened. 
+     * @return Boolean Returns false if opening of the setting failed. Means it is either not present or is not allowed to be called.
+     */
+    fun startIntent(context: Context): Boolean {
+        for (powerManagerIntent in intents) {
+            try {
+                val intent = powerManagerIntent.createIntent()
+                context.startActivity(intent)
+                return true
+            } catch (e: Exception) {
+                PowerOptimisationSurvivorLogger.e(this.javaClass.simpleName, e)
+            }
+        }
+        return false
+    }
+}
+```

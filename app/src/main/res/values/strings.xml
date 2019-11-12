@@ -25,6 +25,7 @@
     <string name="xiaomi_battery_saver_hint">In the App Battery Saver section, select the app, click Save power and set No restrictions.</string>
     <string name="samsung_battery">Battery settings</string>
     <string name="samsung_battery_hint">Make sure that the power saving mode is disabled and add the app to the unmonitored applications.</string>
+    <string name="do_not_optimize_settings">Do not optimize settings</string>
     <!--    <string name="letv_autostart">TODO</string>-->
     <!--    <string name="letv_autostart_hint">TODO</string>-->
     <!--    <string name="vivo_phoneoptimize">TODO</string>-->
