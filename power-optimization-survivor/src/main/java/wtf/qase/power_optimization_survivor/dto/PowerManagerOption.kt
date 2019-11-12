@@ -4,8 +4,7 @@ import android.content.Context
 import wtf.qase.power_optimization_survivor.PowerOptimisationSurvivorLogger
 
 class PowerManagerOption(
-    val label: String,
-    val hint: String,
+    val powerManagerSetting: PowerManagerSetting,
     private val intents: List<PowerManagerIntent>
 ) {
     fun isCallable(context: Context): Boolean {

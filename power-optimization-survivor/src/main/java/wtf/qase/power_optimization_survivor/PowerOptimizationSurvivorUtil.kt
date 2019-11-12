@@ -9,6 +9,7 @@ import android.provider.Settings
 import androidx.annotation.RequiresApi
 import wtf.qase.power_optimization_survivor.dto.PowerManagerIntent
 import wtf.qase.power_optimization_survivor.dto.PowerManagerOption
+import wtf.qase.power_optimization_survivor.dto.PowerManagerSetting
 
 object PowerOptimizationSurvivorUtil {
 
@@ -32,8 +33,7 @@ object PowerOptimizationSurvivorUtil {
         val map = mutableMapOf<String, List<PowerManagerOption>>()
         val xiaomi = arrayListOf<PowerManagerOption>(
             PowerManagerOption(
-                context.getString(R.string.android_xiaomi_autostart),
-                context.getString(R.string.android_xiaomi_autostart_hint),
+                PowerManagerSetting.XIAOMI_AUTOSTART,
                 arrayListOf(
                     PowerManagerIntent(
                         "com.miui.securitycenter",
@@ -42,8 +42,7 @@ object PowerOptimizationSurvivorUtil {
                 )
             ),
             PowerManagerOption(
-                context.getString(R.string.android_xiaomi_battery_saver),
-                context.getString(R.string.android_xiaomi_battery_saver_hint),
+                PowerManagerSetting.XIAOMI_BATTERY_SAVER,
                 arrayListOf(
                     PowerManagerIntent(
                         "com.miui.powerkeeper",
@@ -75,8 +74,7 @@ object PowerOptimizationSurvivorUtil {
 
         val huawei = arrayListOf<PowerManagerOption>(
             PowerManagerOption(
-                context.getString(R.string.android_huawei_lock_screen_cleanup),
-                context.getString(R.string.android_huawei_lock_screen_cleanup_hint),
+                PowerManagerSetting.HUAWEI_LOCK_SCREEN_CLEANUP,
                 arrayListOf(
                     PowerManagerIntent(
                         "com.huawei.systemmanager",
@@ -85,8 +83,7 @@ object PowerOptimizationSurvivorUtil {
                 )
             ),
             PowerManagerOption(
-                context.getString(R.string.android_huawei_app_launch),
-                context.getString(R.string.android_huawei_app_launch_hint),
+                PowerManagerSetting.HUAWEI_APP_LAUNCH,
                 arrayListOf(
                     PowerManagerIntent(
                         "com.huawei.systemmanager",
@@ -105,8 +102,7 @@ object PowerOptimizationSurvivorUtil {
         val oppo = arrayListOf<PowerManagerOption>(
 
             PowerManagerOption(
-                context.getString(R.string.android_oppo_powermanaget),
-                context.getString(R.string.android_oppo_powermanaget_hint),
+                PowerManagerSetting.OPPO_POWERMANAGET,
                 arrayListOf(
                     PowerManagerIntent(
                         "com.coloros.oppoguardelf",
@@ -123,8 +119,7 @@ object PowerOptimizationSurvivorUtil {
                 )
             ),
             PowerManagerOption(
-                context.getString(R.string.android_oppo_startupmanager),
-                context.getString(R.string.android_oppo_startupmanager_hint),
+                PowerManagerSetting.OPPO_STARTUPMANAGER,
                 arrayListOf(
                     PowerManagerIntent(
                         "com.coloros.safecenter",
@@ -227,8 +222,7 @@ object PowerOptimizationSurvivorUtil {
         val asus = arrayListOf<PowerManagerOption>(
 
             PowerManagerOption(
-                context.resources.getString(R.string.android_asus_mobile_manager),
-                context.resources.getString(R.string.android_asus_mobile_manager_hint),
+                PowerManagerSetting.ASUS_MOBILE_MANAGER,
                 arrayListOf(
                     PowerManagerIntent(
                         "com.asus.mobilemanager",
@@ -237,8 +231,7 @@ object PowerOptimizationSurvivorUtil {
                 )
             ),
             PowerManagerOption(
-                context.resources.getString(R.string.android_asus_autostart),
-                context.resources.getString(R.string.android_asus_autostart_hint),
+                PowerManagerSetting.ASUS_AUTOSTART,
                 arrayListOf(
                     PowerManagerIntent(
                         "com.asus.mobilemanager",
@@ -277,8 +270,7 @@ object PowerOptimizationSurvivorUtil {
 
         val samsung = arrayListOf<PowerManagerOption>(
             PowerManagerOption(
-                context.resources.getString(R.string.android_samsung_battery),
-                context.resources.getString(R.string.android_samsung_battery_hint),
+                PowerManagerSetting.SAMSUNG_BATTERY,
                 arrayListOf(
                     PowerManagerIntent(
                         "com.samsung.android.lool",

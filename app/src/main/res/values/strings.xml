@@ -1,3 +1,34 @@
 <resources>
-  <string name="app_name">power-optimization-survivor-android</string>
+    <string name="app_name">Power optimization survivor</string>
+    <string name="go_to_setting">Go to setting</string>
+    <string name="understand">Understand</string>
+    <string name="cancel">Cancel</string>
+    <string name="unsupported_power_setting">This setting is not callable on this device.</string>
+    <string name="do_not_optimize">Do not optimize</string>
+    <string name="already_not_optimized">App is already not optimized</string>
+
+    <string name="huawei_lock_screen_cleanup">Lock screen cleanup</string>
+    <string name="huawei_lock_screen_cleanup_hint">Disable Close all for the app.</string>
+    <string name="huawei_app_launch">App launch</string>
+    <string name="huawei_app_launch_hint">Disable Manage all automatically for the app and then enable all application launch options.</string>
+    <string name="oppo_powermanaget">Battery settings</string>
+    <string name="oppo_powermanaget_hint">Deny power saving including Smart power saver. Allow background running for the app in the Custom power saver section.</string>
+    <string name="oppo_startupmanager">Startup Manager</string>
+    <string name="oppo_startupmanager_hint">Allow background running for the app in the Startup manager section.</string>
+    <string name="asus_autostart">Auto-start Manager</string>
+    <string name="asus_autostart_hint">Allow auto-start for the app to make it run in the background correctly.</string>
+    <string name="asus_mobile_manager">Mobile Manager</string>
+    <string name="asus_mobile_manager_hint">You can set power saver in the Mobile Manager app. To make the app work properly, use Normal power saver mode.</string>
+    <string name="xiaomi_autostart">Autostart</string>
+    <string name="xiaomi_autostart_hint">Allow autostart for the app to make it run in the background correctly.</string>
+    <string name="xiaomi_battery_saver">App Battery Saver</string>
+    <string name="xiaomi_battery_saver_hint">In the App Battery Saver section, select the app, click Save power and set No restrictions.</string>
+    <string name="samsung_battery">Battery settings</string>
+    <string name="samsung_battery_hint">Make sure that the power saving mode is disabled and add the app to the unmonitored applications.</string>
+    <!--    <string name="letv_autostart">TODO</string>-->
+    <!--    <string name="letv_autostart_hint">TODO</string>-->
+    <!--    <string name="vivo_phoneoptimize">TODO</string>-->
+    <!--    <string name="vivo_phoneoptimize_hint">TODO</string>-->
+    <!--    <string name="meizu_security_page">TODO</string>-->
+    <!--    <string name="meizu_security_page_hint">TODO</string>-->
 </resources>
