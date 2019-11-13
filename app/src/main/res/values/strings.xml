@@ -8,7 +8,7 @@
     <string name="already_not_optimized">App is already not optimized</string>
 
     <string name="huawei_lock_screen_cleanup">Lock screen cleanup</string>
-    <string name="huawei_lock_screen_cleanup_hint">Disable Close all for the app.</string>
+    <string name="huawei_lock_screen_cleanup_hint">Disable closing after your screen is locked for the app.</string>
     <string name="huawei_app_launch">App launch</string>
     <string name="huawei_app_launch_hint">Disable Manage all automatically for the app and then enable all application launch options.</string>
     <string name="oppo_powermanaget">Battery settings</string>
