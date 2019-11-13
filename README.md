@@ -30,7 +30,7 @@ allprojects {
 **Step 2.**  Add the dependency
 ```css
 dependencies {
-	implementation 'com.github.qase:power-optimization-survivor-android:0.1-alpha'
+	implementation 'com.github.qase:power-optimization-survivor-android:v1.0'
 }
 ```
 ### Maven
@@ -48,7 +48,7 @@ dependencies {
 	<dependency>
 	    <groupId>com.github.qase</groupId>
 	    <artifactId>power-optimization-survivor-android</artifactId>
-	    <version>0.1-alpha</version>
+	    <version>v1.0</version>
 	</dependency>
 ```
 
